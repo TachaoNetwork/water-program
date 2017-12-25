@@ -1,0 +1,26 @@
+<!--index.wxml-->
+<view class='water-content'>
+    <view class='water-introduce'>
+    此方法用户展示踏潮封装上传用户基本信息的接口，昵称、头像等。
+    </view>
+  <view class='water-btn'>
+    <button bindtap="uploadUserInfo">上传用户基本信息</button>
+  </view>
+  <view class='water-detail'>
+    <text>
+      使用注意事项如下：
+      1，需在app.js中的globalData数据中设置配置项(host)用于存放请求的host，(water.url.uploaduser)存放响相应的请求地址。
+      2，在当前目录的js文件开始引入 (/res/lib/water.js)和(/res/lib/promise.js)，例如：
+    var userinfo = null;//获得用户基本信息
+    var token = null;//获得用户token
+
+    new Promise((resolved, rejected) => {
+      water.uploadUser(resolved, rejected,userinfo,token);
+    }).then(function (value) {
+      console.log(value)
+    }, function (error) {
+      console.log(error);
+    });   
+    </text>
+  </view>
+</view>

@@ -1,0 +1,17 @@
+<!--index.wxml-->
+<view class='water-content'>
+    <view class='water-introduce'>
+    此方法用户展示踏潮封装数据获取接口。
+    </view>
+  <view class='water-btn'>
+    <button bindtap="getStorageSync">数据存储缓存-获取</button>
+  </view>
+  <view class='water-detail'>
+    <text>
+      使用注意事项如下：
+      1，在当前目录的js文件开始引入 (/res/lib/water.js)，例如：
+      //第一个参数：key ，若时间过期则会返回为null，且会把过期存储的数据移除
+      water.getStorageSync('wtt');  
+    </text>
+  </view>
+</view>

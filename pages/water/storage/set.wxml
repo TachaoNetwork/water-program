@@ -1,0 +1,19 @@
+<!--index.wxml-->
+<view class='water-content'>
+    <view class='water-introduce'>
+    此方法用户展示踏潮封装数据设置接口。
+    </view>
+  <view class='water-btn'>
+    <button bindtap="setStorageSync">数据存储缓存-设置</button>
+  </view>
+  <view class='water-detail'>
+    <text>
+      使用注意事项如下：
+      1，在当前目录的js文件开始引入 (/res/lib/water.js)，例如：
+      //第一个参数：key
+      //第二个参数 String/Object
+      //第三个数 -1(永久有效)，大于0的正整数 ，若为小数则向上取最接近的整数
+      water.setStorageSync('wtt', '123456',100);  
+    </text>
+  </view>
+</view>

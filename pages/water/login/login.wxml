@@ -1,0 +1,36 @@
+<!--index.wxml-->
+<view class='water-content'>
+    <view class='water-introduce'>
+    此方法用户展示踏潮封装获取用户登录信息，获得token、openid、unionid等。
+    </view>
+  <view class='water-name'>
+    <text>token:{{baseInfo.openid}}</text>
+  </view>    
+  <view class='water-name'>
+    <text>openid:{{baseInfo.openid}}</text>
+  </view>
+  <view class='water-name'>
+    <text>unionid:{{baseInfo.unionid}}</text>
+  </view>
+  <view class='water-btn'>
+    <button bindtap="getLoginInfo">获取用户基本信息</button>
+  </view>
+  <view class='water-detail'>
+    <text>
+      使用注意事项如下：
+      1，需在app.js中的globalData数据中设置配置项(host)用于存放请求的host，(water.url.login)存放响相应的请求地址。
+      2，在当前目录的js文件开始引入 (/res/lib/water.js)和(/res/lib/promise.js)，例如：
+    var that = this;
+    new Promise((resolved, rejected) => {
+      water.loginInfo(resolved, rejected);
+    }).then(function (value) {
+      console.log(value)
+      that.setData({
+        baseInfo: value
+      });
+    }, function (error) {
+      //TODO SOMETHING
+    }); 
+    </text>
+  </view>
+</view>
