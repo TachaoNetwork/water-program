@@ -1,0 +1,11 @@
+{
+  "pages":[
+    "pages/index/index"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#FAFAFA",
+    "navigationBarTitleText": "Water-小程序基础框架",
+    "navigationBarTextStyle":"black"
+  }
+}

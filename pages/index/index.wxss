@@ -1,0 +1,29 @@
+.water-content{
+  background-color: #FAFAFA;
+  font-size: 14px;
+}
+.water-logo{
+  text-align: center;
+}
+.water-logo image{
+  border-radius:50%;
+  width: 70px;
+  height: 70px;
+}
+.water-introduce{
+  margin: 10px 30px;
+}
+.water-item{
+  background-color: #ffffff;
+  margin: 5px 20px;
+}
+.water-item-text{
+  vertical-align: middle;
+  border: 1px solid #d0ecf6;
+  height: 40px;
+  padding: 5px 0 0 5px;
+}
+.water-btn{
+  background-color: #3a8dc7;
+  color: #ffffff;
+}

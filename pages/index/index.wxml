@@ -1,0 +1,19 @@
+<!--index.wxml-->
+<view class='water-content'>
+  <view>
+     <view class='water-logo'>
+        <image src='/res/img/logo.jpg'></image>
+     </view>
+    <view class='water-introduce'>
+    以下将展示踏潮封装微信小程序的基础交互逻辑，以供基础交互通用，具体使用方法请参考文档。
+    </view>
+  </view>
+  <view class='water-item'>
+    <view class='water-item-text'>
+      获取头像
+    </view>
+  </view>
+  <view>
+     
+  </view>
+</view>
