@@ -3,6 +3,9 @@
     <view class='water-introduce'>
     此方法用户展示踏潮封装数据获取接口。
     </view>
+      <view class='water-detail'>
+    <text>{{storgageVal}}</text>
+    </view>
   <view class='water-btn'>
     <button bindtap="getStorageSync">数据存储缓存-获取</button>
   </view>

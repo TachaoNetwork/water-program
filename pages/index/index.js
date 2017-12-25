@@ -7,6 +7,22 @@ Page({
 
   },
 
+  onShareAppMessage: function (res) {
+    if (res.from === 'button') {
+      // 来自页面内转发按钮
+      console.log(res.target)
+    }
+    return {
+      title: '踏潮微信小程序框架(Water)',
+      path: '/pages/index/index',
+      success: function (res) {
+        // 转发成功
+      },
+      fail: function (res) {
+        // 转发失败
+      }
+    }
+  },
   getUserInfo:function(e){
     wx.navigateTo({
       url: '/pages/water/user/user',
@@ -31,7 +47,8 @@ Page({
     wx.navigateTo({
       url: '/pages/water/storage/get',
     })
-  },   
+  },  
+
   onLoad: function () {
 
   }
