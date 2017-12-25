@@ -15,13 +15,14 @@
 }
 .water-item{
   background-color: #ffffff;
-  margin: 5px 20px;
+  margin: 5px 20px 20px 20px;
 }
 .water-item-text{
   vertical-align: middle;
+  text-align: center;
   border: 1px solid #d0ecf6;
-  height: 40px;
-  padding: 5px 0 0 5px;
+  height: 30px;
+  padding: 10px 0 0 5px;
 }
 .water-btn{
   background-color: #3a8dc7;

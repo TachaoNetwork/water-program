@@ -1,11 +1,16 @@
 {
-  "pages":[
-    "pages/index/index"
+  "pages": [
+    "pages/index/index",
+    "pages/water/user/user",
+    "pages/water/login/login",
+    "pages/water/upload/user",
+    "pages/water/storage/set",
+    "pages/water/storage/get"
   ],
-  "window":{
-    "backgroundTextStyle":"light",
+  "window": {
+    "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#FAFAFA",
     "navigationBarTitleText": "Water-小程序基础框架",
-    "navigationBarTextStyle":"black"
+    "navigationBarTextStyle": "black"
   }
 }

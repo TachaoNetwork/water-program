@@ -8,12 +8,29 @@
     以下将展示踏潮封装微信小程序的基础交互逻辑，以供基础交互通用，具体使用方法请参考文档。
     </view>
   </view>
-  <view class='water-item'>
+  <view class='water-item' bindtap='getUserInfo'>
     <view class='water-item-text'>
-      获取头像
+      获取用户基本信息
     </view>
   </view>
-  <view>
-     
+  <view class='water-item' bindtap='getLoginInfo'>
+    <view class='water-item-text'>
+      获取用户登录信息
+    </view>
   </view>
+  <view class='water-item' bindtap='uploadUserInfo'>
+    <view class='water-item-text'>
+      上传用户基本信息
+    </view>
+  </view> 
+  <view class='water-item' bindtap='setStorageSync'>
+    <view class='water-item-text'>
+      数据存储缓存-设置
+    </view>
+  </view>  
+  <view class='water-item' bindtap='getStorageSync'>
+    <view class='water-item-text'>
+      数据存储缓存-获取
+    </view>
+  </view>     
 </view>
